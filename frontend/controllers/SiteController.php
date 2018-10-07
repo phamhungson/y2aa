@@ -13,6 +13,7 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 
+use app\models\EntryForm;
 /**
  * Site controller
  */
@@ -211,5 +212,15 @@ class SiteController extends Controller
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+    public function actionEntry()
+    {
+        $model = new EntryForm();
+
+        if($model->load(Yii::$app->request->post()) && $model->validate())
+        {
+            return $this->render('entry-confirm',['model'=>$model]);
+        }else
+        return $this->render('entry',['model'=>$model]);
     }
 }
