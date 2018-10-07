@@ -9,3 +9,16 @@ yii\db\ActiveRecord;
 yii\data\Pagination;
 
 yii\widgets\LinkPager;
+
+Component/
+    entry scripts
+
+    applications
+
+    applications/Components
+
+    modules
+
+    filters
+    
+    widgets
