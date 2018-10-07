@@ -2,5 +2,10 @@ yii\helpers\Html;
 
 yii\widgets\ActiveForm;
 
-use yii\base\Model;
+yii\base\Model;
 
+yii\db\ActiveRecord;
+
+yii\data\Pagination;
+
+yii\widgets\LinkPager;
